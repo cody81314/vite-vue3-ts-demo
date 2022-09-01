@@ -3,6 +3,7 @@ import HelloWorld from "../components/HelloWorld.vue";
 import AttributeBindings from "../components/attribute-bindings.vue";
 import EventListeners from "../components/event-listeners.vue";
 import FormBindings from "../components/form-bindings.vue";
+import ConditionalRendering from "../components/conditional-rendering.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -27,6 +28,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/form-bindings",
     name: "formBindings",
     component: FormBindings
+  },
+  {
+    path: "/conditional-rendering",
+    name: "conditionalRendering",
+    component: ConditionalRendering
   },
 ];
 
