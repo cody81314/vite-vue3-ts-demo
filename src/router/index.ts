@@ -3,8 +3,9 @@ import HelloWorld from "../components/HelloWorld.vue";
 import AttributeBindings from "../components/attribute-bindings.vue";
 import EventListeners from "../components/event-listeners.vue";
 import FormBindings from "../components/form-bindings.vue";
-import ConditionalRendering from "../components/conditional-rendering.vue"
-import ListRendering from "../components/list-rendering.vue"
+import ConditionalRendering from "../components/conditional-rendering.vue";
+import ListRendering from "../components/list-rendering.vue";
+import ComputedProperty from "../components/computed-property.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -39,6 +40,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/list-rendering",
     name: "listRendering",
     component: ListRendering
+  },
+  {
+    path: "/computed-property",
+    name: "computedProperty",
+    component: ComputedProperty
   },
 ];
 
