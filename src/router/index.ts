@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HelloWorld from "../components/HelloWorld.vue";
 import AttributeBindings from "../components/attribute-bindings.vue";
 import EventListeners from "../components/event-listeners.vue";
+import FormBindings from "../components/form-bindings.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -21,6 +22,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/event-listeners",
     name: "eventListeners",
     component: EventListeners
+  },
+  {
+    path: "/form-bindings",
+    name: "formBindings",
+    component: FormBindings
   },
 ];
 
