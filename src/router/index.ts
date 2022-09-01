@@ -4,6 +4,7 @@ import AttributeBindings from "../components/attribute-bindings.vue";
 import EventListeners from "../components/event-listeners.vue";
 import FormBindings from "../components/form-bindings.vue";
 import ConditionalRendering from "../components/conditional-rendering.vue"
+import ListRendering from "../components/list-rendering.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -33,6 +34,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/conditional-rendering",
     name: "conditionalRendering",
     component: ConditionalRendering
+  },
+  {
+    path: "/list-rendering",
+    name: "listRendering",
+    component: ListRendering
   },
 ];
 
