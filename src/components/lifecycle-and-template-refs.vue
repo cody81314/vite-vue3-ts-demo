@@ -1,0 +1,13 @@
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const p = ref(null)
+
+onMounted(() => {
+  p.value.textContent = 'world';
+})
+</script>
+
+<template>
+  <p ref="p">hello</p>
+</template>

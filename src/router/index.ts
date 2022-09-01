@@ -6,6 +6,7 @@ import FormBindings from "../components/form-bindings.vue";
 import ConditionalRendering from "../components/conditional-rendering.vue";
 import ListRendering from "../components/list-rendering.vue";
 import ComputedProperty from "../components/computed-property.vue";
+import LifecycleAndTemplateRefs from "../components/lifecycle-and-template-refs.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -45,6 +46,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/computed-property",
     name: "computedProperty",
     component: ComputedProperty
+  },
+  {
+    path: "/lifecycle-and-template-refs",
+    name: "lifecycleAndTemplateRefs",
+    component: LifecycleAndTemplateRefs
   },
 ];
 
