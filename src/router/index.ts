@@ -8,6 +8,7 @@ import ListRendering from "../components/list-rendering.vue";
 import ComputedProperty from "../components/computed-property.vue";
 import LifecycleAndTemplateRefs from "../components/lifecycle-and-template-refs.vue";
 import Watchers from "../components/watchers.vue";
+import Slots from "../components/slots/slots.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -57,6 +58,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/watchers",
     name: "watchers",
     component: Watchers
+  },
+  {
+    path: "/slots",
+    name: "slots",
+    component: Slots
   },
 ];
 
