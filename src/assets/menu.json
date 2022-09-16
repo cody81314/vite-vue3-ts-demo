@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Home",
+    "seqNo": 0,
+    "subMenu": []
+  },
+  {
+    "name": "HasSub",
+    "seqNo": 1,
+    "subMenu": [
+      {
+        "name": "subMenu"
+      }
+    ]
+  }
+]
