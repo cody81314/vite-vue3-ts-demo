@@ -3,24 +3,26 @@ import menuData from './../assets/menu.json';
 </script>
 
 <template>
-<div 
-    id="sideMenuContainer" 
-    :class="{ transitionRight: true, transitionLeft: !true }" 
-    style="display: block;"
+  <div
+    id="sideMenuContainer"
+    :class="{ transitionRight: true, transitionLeft: !true }"
+    style="display: block"
   >
     <ul class="sideMainMenu">
       <!-- eslint-disable-next-line prettier/prettier -->
-      <li v-for="level1Item in menuData" 
-        :key="level1Item.seqNo" 
+      <li
+        v-for="level1Item in menuData"
+        :key="level1Item.seqNo"
         :class="{ select: true, withSubMenu: level1Item.subMenu.length !== 0 }"
       >
         <a v-if="level1Item.subMenu.length === 0">{{ level1Item.name }}</a>
         <div v-else>{{ level1Item.name }}</div>
         <ul v-if="level1Item.subMenu.length !== 0" class="sideSubMenu">
-          <li 
-            v-for="level2Item in level1Item.subMenu" 
-            :key="level2Item.seqNo" 
-            :class="{ select: false }" href="#"
+          <li
+            v-for="level2Item in level1Item.subMenu"
+            :key="level2Item.seqNo"
+            :class="{ select: false }"
+            href="#"
           >
             <a>{{ level2Item.name }}</a>
           </li>
